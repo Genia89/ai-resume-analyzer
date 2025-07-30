@@ -1,87 +1,61 @@
-# Welcome to React Router!
+# Resumind – AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Resumind** is an AI-powered resume analyzer that reads and scores resumes using ATS logic, offering tailored feedback to help users improve their job application success rate.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Upload PDF resumes and preview them directly in the application
+- AI-powered feedback and scoring on:
+    - ATS readability
+    - Content quality
+    - Tone and style
+    - Skills and structure
+- Visual scoring with icons, color-coded sections, and actionable suggestions
+- Resume snapshot preview using static image
+- Built with a modern, fast, and scalable stack
+
+## Tech Stack
+
+- **React + TypeScript**
+- **Tailwind CSS** for styling
+- **Zustand** for state management
+- **Vite** for fast builds and development
+- **Puter.com** storage API
+- **React Router v7** for routing
 
 ## Getting Started
 
-### Installation
+### 1. Install dependencies
 
-Install the dependencies:
+``` bash
+    npm install
+```
+### 2. Start the development server
+``` bash
+    npm run dev
+```
+Visit the app at: http://localhost:5173
 
-```bash
-npm install
+## Build for Production
+``` bash
+    npm run build
+```
+## Project Structure
+```
+/public             → Static assets (icons, images, resume files)
+/src
+  ├── components    → Reusable UI components
+  ├── lib           → Zustand store and helper functions
+  ├── pages         → Route views
+  ├── styles        → Tailwind and global styles
+  ├── constants     → Resume data and static settings
 ```
 
-### Development
+## Planned Features
+- User accounts and persistent feedback
 
-Start the development server with HMR:
+- AI-powered resume rewriting suggestions
 
-```bash
-npm run dev
-```
+- Real-time scoring and analysis
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- Resume template generation and customization
