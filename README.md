@@ -54,6 +54,9 @@ To create a new project with Vite, run:
 Appliq uses Puter.js for secure file storage, AI access, auth, and infinite scalability without any backend.
 
 ✅ Be sure to create a free account on [Puter](https://puter.com) before you start, since you’ll need API access and a virtual computer to deploy and test.
+To use the app’s AI features (like resume upload, feedback, and scoring), a free [Puter.com](https://puter.com) account is required.
+> 🧠 **Note:** A Puter account is also required to run the app itself — not just for developers!  
+> Users need to log in with Puter to upload and analyze resumes using AI.
 
 ### AI Code Assistant: Junie AI Plugin
 For smoother development, this project also used Junie AI, a JetBrains plugin that acts as your AI pair programmer.
@@ -100,7 +103,7 @@ Your app will be available at: http://localhost:5173
     ├── components     → Reusable UI elements (scoring, nav, ats, etc.)
     ├── lib            → Puter utilities
     ├── routes         → Route views (home, auth, resume, etc.)
-/ constants      → Static resume and feedback config
+/constants      → Static resume and feedback config
 /public     
 /types     
 ```
