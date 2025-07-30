@@ -37,11 +37,46 @@ In today’s job market, it's common to send out dozens of applications and hear
 
 ---
 
+## 🛠️ Setup Notes & Developer Tools
+
+### Vite
+
+This project uses [**Vite**](https://vite.dev), a fast build tool and dev server for modern frontend projects.
+
+To create a new project with Vite, run:
+
+```bash
+    npm create vite@latest .
+```
+📝 The dot . at the end is important it installs the app into the current folder, and not adding a new folder.
+
+### Puter.com Account
+Appliq uses Puter.js for secure file storage, AI access, auth, and infinite scalability without any backend.
+
+✅ Be sure to create a free account on [Puter](https://puter.com) before you start, since you’ll need API access and a virtual computer to deploy and test.
+
+### AI Code Assistant: Junie AI Plugin
+For smoother development, this project also used Junie AI, a JetBrains plugin that acts as your AI pair programmer.
+
+💡 Highly recommended it improves productivity, offers code suggestions, refactoring help, and even generates components.
+
+To install it:
+
+1. Open your JetBrains IDE (like WebStorm)
+
+2. Go to Plugins → Search for “Junie AI”
+
+3. Install and restart the IDE
+
+### Built With WebStorm
+This app was built using WebStorm by JetBrains IDE for modern JavaScript and TypeScript development.
+
+🧠 The combination of WebStorm + Junie AI + Vite makes development incredibly fast and enjoyable.
+
+
 ## 🚀 Getting Started
 
 ### 1. Clone the project
-
-[https://github.com/Genia89/ai-resume-analyzer](https://github.com/Genia89/ai-resume-analyzer)
 
 ```bash
     git clone https://github.com/Genia89/ai-resume-analyzer
@@ -101,7 +136,7 @@ Appliq uses [**Puter**](https://puter.com) for secure file storage, AI access, a
 
 ```bash
   git add .
-  git commit -m "ready for deploy"
+  git commit -m "add your message"
   git push
 ```
   #### 2. Update config for static deployment
