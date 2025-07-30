@@ -1,6 +1,6 @@
-# Resumind – AI Resume Analyzer
+# Appliq – AI Resume Analyzer
 
-**Resumind** is an AI-powered resume analyzer that reads and scores resumes using ATS logic, offering tailored feedback to help users improve their job application success rate.
+**Appliq** is an AI-powered resume analyzer that reads and scores resumes using ATS logic, offering tailored feedback to help users improve their job application success rate.
 
 ## Features
 
