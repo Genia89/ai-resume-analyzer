@@ -1,61 +1,138 @@
 # Appliq – AI Resume Analyzer
 
-**Appliq** is an AI-powered resume analyzer that reads and scores resumes using ATS logic, offering tailored feedback to help users improve their job application success rate.
+**Appliq** is a serverless AI-powered resume analyzer that helps job seekers understand how their resume performs against Applicant Tracking Systems (ATS) and where it can be improved. Upload your resume, get instant feedback, and optimize your application for better chances.
 
-## Features
+---
 
-- Upload PDF resumes and preview them directly in the application
-- AI-powered feedback and scoring on:
-    - ATS readability
-    - Content quality
-    - Tone and style
-    - Skills and structure
-- Visual scoring with icons, color-coded sections, and actionable suggestions
-- Resume snapshot preview using static image
-- Built with a modern, fast, and scalable stack
+## 📌 Why Appliq?
 
-## Tech Stack
+In today’s job market, it's common to send out dozens of applications and hear nothing back, not even a rejection. This silence isn’t always a reflection of your qualifications. More often, it's because your resume isn't optimized for the systems that screen them.
 
-- **React + TypeScript**
-- **Tailwind CSS** for styling
-- **Zustand** for state management
-- **Vite** for fast builds and development
-- **Puter.com** storage API
-- **React Router v7** for routing
+**Appliq** helps close that gap by giving you clear, AI-generated insights into what recruiters and ATS systems are (and aren't) seeing.
 
-## Getting Started
+---
 
-### 1. Install dependencies
+## 🔍 Features
+
+- **PDF Resume Uploads** – Easily drag & drop or upload your resume
+- **Instant Previews** – View your resume image snapshot directly in-app
+- **AI Feedback Engine** – Get automated, categorized feedback on:
+  - ATS readability
+  - Content quality
+  - Tone and style
+  - Skills and structure
+- **Scoring Dashboard** – Visual scores with helpful tips and improvement areas
+- **Modern, serverless tech** – No backend setup required
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** React + TypeScript
+- **Styling:** TailwindCSS
+- **Routing:** React Router v7
+- **State Management:** Zustand
+- **Tooling:** Vite
+- **Storage & Auth:** [Puter.com](https://puter.com) APIs (file storage, auth, KV database, AI access)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the project
+
+[https://github.com/Genia89/ai-resume-analyzer](https://github.com/Genia89/ai-resume-analyzer)
+
+```bash
+    git clone https://github.com/Genia89/ai-resume-analyzer
+```
+
+### 2. Install dependencies
 
 ``` bash
     npm install
 ```
-### 2. Start the development server
+### 3. Start the development server
 ``` bash
     npm run dev
 ```
-Visit the app at: http://localhost:5173
+Your app will be available at: http://localhost:5173
 
-## Build for Production
+## 📁 Project Structure
+```
+/public              → Static assets (icons, images, resumes)
+/app
+    ├── components     → Reusable UI elements (scoring, nav, ats, etc.)
+    ├── lib            → Puter utilities
+    ├── routes         → Route views (home, auth, resume, etc.)
+/ constants      → Static resume and feedback config
+/public     
+/types     
+```
+
+## 🔒 Security & Hosting
+
+Appliq uses [**Puter**](https://puter.com) for secure file storage, AI access, and serverless infrastructure. This means:
+
+- No backend setup
+
+- No database maintenance
+
+- All data stays secure in your personal Puter environment
+
+## 💡 Planned Enhancements
+-  User accounts & saved resume history
+
+-  AI-generated rewrite suggestions
+
+-  Real-time resume grading
+
+-  Resume templates for customization
+
+-  Job description matching
+
+## 🌐 Deployment
+
+**Appliq** can be deployed to platforms like **Vercel**, **Netlify**, or **Railway** — but it’s designed for seamless deployment directly on [**Puter.com**](https://puter.com).
+
+### ✅ Steps to Deploy on Puter
+
+#### 1. Commit your changes to GitHub
+
+```bash
+  git add .
+  git commit -m "ready for deploy"
+  git push
+```
+  #### 2. Update config for static deployment
+  In react-router.config.ts, ensure server-side rendering is disabled:
+```
+export default {
+ssr: false, // Required for static HTML build
+} satisfies Config;
+```
+
+#### Create the production build
 ``` bash
     npm run build
 ```
-## Project Structure
-```
-/public             → Static assets (icons, images, resume files)
-/src
-  ├── components    → Reusable UI components
-  ├── lib           → Zustand store and helper functions
-  ├── pages         → Route views
-  ├── styles        → Tailwind and global styles
-  ├── constants     → Resume data and static settings
-```
 
-## Planned Features
-- User accounts and persistent feedback
+#### 4. Upload to Puter
+- Go to Puter App Center
 
-- AI-powered resume rewriting suggestions
+- Click “Add your app!” → “Create an App”
 
-- Real-time scoring and analysis
+- Give your app a name (e.g., "Appliq – Resume Analyzer")
 
-- Resume template generation and customization
+- Open the build/client/ folder in your file system
+
+- Select all files inside and drag & drop them into the app folder on Puter
+
+- Click "Deploy Now"
+
+#### 5. Launch & Customize
+- Click "Give it a try!" to open your deployed app inside your virtual computer
+
+- Customize your app title, favicon, and name in the App Settings
+
+- Copy your public URL (shown in settings) and share it anywhere
