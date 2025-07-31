@@ -174,3 +174,8 @@ ssr: false, // Required for static HTML build
 - Customize your app title, favicon, and name in the App Settings
 
 - Copy your public URL (shown in settings) and share it anywhere
+## 🔗 Live App
+
+Try it here: [https://puter.com/app/appliq-ai-resume-analyzer](https://puter.com/app/appliq-ai-resume-analyzer)
+
+> ⚠️ You must be logged in to [Puter](https://puter.com) to use the app. It's free and takes 30 seconds to sign up.
